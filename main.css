@@ -1,11 +1,23 @@
-main.css
-
 body {
-  background-color: #9932CC;
+
+	background-color: #4B0082;
+
 }
+
 p {
   color:#7FFFD4;
 }
 h1 {
   font-weight: bold;
-  font-family: 'Kumbh Sans', sans-serif; 
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #F0FFF0 
+}
+h2 {
+	color: #F0FFF0
+
+}
+
+{ 
+	 p.double {border-style: double;
+		border color:#E6E6FA
+}
