@@ -41,7 +41,7 @@ ul li {
 
 
 ul li.checked::before {
-  content: '';
+  content: 'Doing well!';
   position: absolute;
   border-color: #fff;
   border-style: solid;
@@ -73,7 +73,7 @@ ul li.checked::before {
 }
 
 .header:after {
-  content: "";
+  content: "Thank you!";
   display: table;
   clear: both;
 }
@@ -89,7 +89,7 @@ input {
 }
 
 
-.addBtn {
+.addBtn { 
   padding: 10px;
   width: 25%;
   background: #d9d9d9;
