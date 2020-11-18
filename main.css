@@ -42,7 +42,7 @@ ul li {
 
 ul li.checked::before {
   content: 'Doing well!';
-  position: absolute;
+  position: absolute; 
   border-color: #fff;
   border-style: solid;
   border-width: 0 2px 2px 0;
