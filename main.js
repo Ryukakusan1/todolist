@@ -1,4 +1,6 @@
-var myNodelist = document.getElementsByTagName("LI");
+
+<script>
+var myTodolist = document.getElementsByTagName("index");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
@@ -51,7 +53,4 @@ function newElement() {
     }
   }
 }
-</script>
-
-</body>
-</html>
+  </script>
