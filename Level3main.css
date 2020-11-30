@@ -1,4 +1,4 @@
-Level3main.css
+
 
 body {
 
@@ -103,3 +103,9 @@ input {
   transition: 0.3s;
   border-radius: 0;
 }
+
+
+ul li:nth-child(odd) {
+  background: #FFD4D4;
+}
+
