@@ -1,6 +1,6 @@
 var myTodolist = document.getElementsByTagName("Level3index");
 var i;
-for (i = 0; i < myNodelist.length; i++) {
+for (i = 0; i < myNodelist; i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
