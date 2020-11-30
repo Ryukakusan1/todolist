@@ -1,6 +1,60 @@
-Level3main.js
+var myTodolist = document.getElementsByTagName("index");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
 
-var inputText = document.getElementById("txt"),
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Adds a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Creates a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("What should I do?");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+
+
+
+var inputText = document.getElementById("Level3index"),
                  items = document.querySelectorAll("#list li"),
                  tab = [], index;
          
@@ -93,23 +147,23 @@ function sortLI() {
     switching = false;
     b = list.getElementsByTagName("LI");
 
-    // Loop through all list-items:
+    // Loop through all listed-items
     for (i = 0; i < (b.length - 1); i++) {
-      // start by saying there should be no switching:
+      // says there should be no swaping
       shouldSwitch = false;
-      /* check if the next item should switch place with the current item: */
+      /* checks if the next item should swap place with the current item: */
       if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
         /* if next item is alphabetically
-        lower than current item, mark as a switch
+        lower than current item, mark as a swap
         and break the loop: */
         shouldSwitch = true;
         break;
       }
     }
     if (shouldSwitch) {
-      //alert("You must write something!");
-      /* If a switch has been marked, make the switch
-      and mark the switch as done: */
+      //alert("Enter Task");
+      /* If a swap has been marked, make the swap
+      and mark the swap as done: */
       b[i].parentNode.insertBefore(b[i + 1], b[i]);
       switching = true;
     }
