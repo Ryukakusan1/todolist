@@ -1,4 +1,4 @@
-var myTodolist = document.getElementsByTagName("index");
+var myTodolist = document.getElementsByTagName("Level3index");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
@@ -52,9 +52,6 @@ function newElement() {
   }
 }
 
-
-
-var inputText = document.getElementById("Level3index"),
                  items = document.querySelectorAll("#list li"),
                  tab = [], index;
          
