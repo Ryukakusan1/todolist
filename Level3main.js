@@ -1,3 +1,4 @@
+/**
 var myTodolist = document.getElementsByTagName("Level3index");
 var i;
 for (i = 0; i < myNodelist; i++) {
@@ -24,7 +25,7 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
-
+*/
 // Creates a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
@@ -39,8 +40,8 @@ function newElement() {
   document.getElementById("myInput").value = "";
 
   var span = document.createElement("SPAN");
-  <var button = document.getElementById("addbutton");
-		button.addEventListener("click", addTask); > 
+  var button = document.getElementById("addbutton");
+		button.addEventListener("click", addLI); 
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
