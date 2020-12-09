@@ -60,11 +60,6 @@ function newElement() {
              // get the selected li index using array
             // populate array with li values
              
-            {length () i >= 0; i--} {for [i]
-             }(var i = 0; i < items.length; i++{
-                 tab.push(items[i].innerHTML);
-             }
-             
              // get li index onclick
              for(var i = 0; i < items.length; i++){
                  
@@ -93,7 +88,7 @@ function newElement() {
                     textNode = document.createTextNode(inputText.value),
                     liNode = document.createElement("LI");
                     
-                    liNode.appendChild(textNode);
+                  liNode.appendChild(textNode);
                     listNode.appendChild(liNode);
                     
                     refreshArray();
@@ -107,7 +102,7 @@ function newElement() {
                      inputText.value = liNode.innerHTML;
                  };
                     
-             }
+        
              
              function editLI(){
                  // edit the selected li using input text
