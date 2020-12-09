@@ -55,13 +55,13 @@ function newElement() {
   }
 }
 
-                 items = document.querySelectorAll("#list li"),
-                 tab = [], index;
-         
+                 items = document.querySelectorAll("#list li")
+                 tab = [], index,
              // get the selected li index using array
-             // populate array with li values
+            // populate array with li values
              
-             for(var i = 0; i < items.length; i++){
+            length (- 1; i >= 0; i-- {for[i]
+             }(var i = 0; i < items.length; i++{
                  tab.push(items[i].innerHTML);
              }
              
