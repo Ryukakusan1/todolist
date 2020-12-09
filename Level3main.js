@@ -25,7 +25,7 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
-*/
+
 // Creates a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
@@ -60,7 +60,7 @@ function newElement() {
              // get the selected li index using array
             // populate array with li values
              
-            length (- 1; i >= 0; i-- {for[i]
+            {length () i >= 0; i--} {for [i]
              }(var i = 0; i < items.length; i++{
                  tab.push(items[i].innerHTML);
              }
