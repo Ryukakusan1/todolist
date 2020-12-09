@@ -1,4 +1,4 @@
-/**
+
 var myTodolist = document.getElementsByTagName("Level3index");
 var i;
 for (i = 0; i < myNodelist; i++) {
