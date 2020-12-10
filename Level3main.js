@@ -15,7 +15,7 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
-  }
+  };
 }
 
 // Adds a "checked" symbol when clicking on a list item
@@ -51,17 +51,17 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
-    }
+    };
   }
 }
 
-                 items = document.querySelectorAll("#list li")
+                 items = document.querySelectorAll("#list li");
                  tab = [], index,
              // get the selected li index using array
             // populate array with li values
              
              // get li index onclick
-             for(var i = 0; i < items.length; i++){
+             for(var i = 0; i < items.length; i++{
                  
                  items[i].onclick = function(){
                      index = tab.indexOf(this.innerHTML);
@@ -123,7 +123,6 @@ addTask.insertAdjacentHTML("beforeend", "<li> "+ task + "</li>");
     }
 }
 
-}
 
 
               function clearLI(){
